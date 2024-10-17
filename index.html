@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+    <div class="container">
+        <div class="bookslide">
+            <h2>Psychology of Money</h2>
+            <h5>Morgan Housal</h5>
+            <p>The Psychology of Money explores how money moves around in an economy and how personal biases and the emotional factor play an important role in our financial decisions, as well as how to think more rationally and make better decisions when it comes to money.</p>
+            <button onclick="deleteSlide(event)">Delete</button>
+        </div>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <p id="test"></p>
+    <div class="popup-overlay"></div>
+    <div class="popup-add-book">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Name" id="book-name-input">
+            <input type="text" placeholder="Author Name" id="author-name-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <div class="button-container">
+                <button id="add-book-button">Add</button>
+                <button id="cancel-popup">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <h5>Creator &copy; Nani &#8482;</h5>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
